@@ -90,9 +90,20 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  let passwordLength = prompt("Please choose between 10-64 characters.");
+  console.log(passwordLength);
+
+  if (passwordLength < 10){
+    alert("Password must be at least 10 characters");
+  } else if (passwordLength > 64) {
+    alert("Password must be less than 64 characters");
+  }
 
 }
 
+
+
+getPasswordOptions()
 // Function for getting a random element from an array
 function getRandom(arr) {
 
