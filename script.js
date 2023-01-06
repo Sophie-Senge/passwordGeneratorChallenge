@@ -94,10 +94,29 @@ function getPasswordOptions() {
   console.log(passwordLength);
 
   if (passwordLength < 10){
-    alert("Password must be at least 10 characters");
+    alert("Password must be at least 10 characters.");
   } else if (passwordLength > 64) {
-    alert("Password must be less than 64 characters");
+    alert("Password must be less than 64 characters.");
   }
+  
+  let hasLowerCase = confirm("Would you like to include lower case characters?");
+  let hasUpperCase = confirm("Would you like to include upper case characters?");
+  let hasSpecialCharacters = confirm("Would you like to include special characters?");
+  let hasNumbers = confirm("Would you like to include numbers?");
+
+let userPasswordOptions = {
+  length: passwordLength, 
+  specialCharacters: hasSpecialCharacters,
+  lowerCase: hasLowerCase,
+  upperCase: hasUpperCase,
+  numbers: hasNumbers
+}
+if (hasSpecialCharacters === false &&
+  hasLowerCase === false &&
+  hasUpperCase === false &&
+  hasNumbers === false){
+  alert("Must choose at least one character type!")
+}
 
 }
 
