@@ -89,36 +89,54 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-function getPasswordOptions() {
-  let passwordLength = prompt("Please choose between 10-64 characters.");
-  console.log(passwordLength);
+//figure out how to run a break in the alerts so they don't keep running "ternary expression"?
 
-  if (passwordLength < 10){
-    alert("Password must be at least 10 characters.");
-  } else if (passwordLength > 64) {
-    alert("Password must be less than 64 characters.");
-  }
+
   
+function getPasswordOptions() {
+ 
+  let passwordLength = prompt("Please choose between 10-64 characters.");
+  
+  if (passwordLength < 10){
+    alert("password must be at least 10 characters");
+  }  
+  else if (passwordLength > 64) {
+    alert("Password must be less than 64 characters.");
+  } 
+  else if (passwordLength => 10 && passwordLength <= 64){ 
   let hasLowerCase = confirm("Would you like to include lower case characters?");
   let hasUpperCase = confirm("Would you like to include upper case characters?");
-  let hasSpecialCharacters = confirm("Would you like to include special characters?");
+  let hasSymbols = confirm("Would you like to include symbols?");
   let hasNumbers = confirm("Would you like to include numbers?");
+
+  console.log(passwordLength);
 
 let userPasswordOptions = {
   length: passwordLength, 
-  specialCharacters: hasSpecialCharacters,
+  symbols: hasSymbols,
   lowerCase: hasLowerCase,
   upperCase: hasUpperCase,
   numbers: hasNumbers
 }
-if (hasSpecialCharacters === false &&
-  hasLowerCase === false &&
-  hasUpperCase === false &&
-  hasNumbers === false){
+if (!hasSymbols && !hasLowerCase &&
+  !hasUpperCase && !hasNumbers){
   alert("Must choose at least one character type!")
 }
+    
+  }
 
+ 
+//  console.log(passwordLength)
+
+
+  
+
+  
+  
+  
+  
 }
+
 
 
 
