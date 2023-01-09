@@ -137,14 +137,29 @@ if (!hasSymbols && !hasLowerCase &&
   
 }
 
-
-
-
 getPasswordOptions()
-// Function for getting a random element from an array
-function getRandom(arr) {
 
+
+
+// Function for getting a random element from an array
+function randomArray (arr){
+  let stringToBuild = "";
+  let newPos;
+  for (let i = 0; i < arr.length; i++) {
+    newPos = Math.floor(Math.random() * arr.length);
+    const character = arr[i];
+    arr[i] = arr[newPos];
+    arr[newPos] = character;
+    stringToBuild += character; 
+  }
+  return stringToBuild;
 }
+console.log(randomArray(specialCharacters));
+console.log(randomArray(specialCharacters));
+console.log(randomArray(specialCharacters));
+
+
+
 
 // Function to generate password with user input
 function generatePassword() {
