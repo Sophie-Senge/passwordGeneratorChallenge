@@ -100,7 +100,7 @@ function getPasswordOptions() {
     alert("password must be between 10 and 64 characters!");
   }  
  
-  if (passwordLength => 10 && passwordLength <= 64){ 
+  else if (passwordLength => 10 && passwordLength <= 64){ 
   let hasLowerCase = confirm ("Would you like to include lower case characters?");
           if (hasLowerCase === true) {
             mainArray = mainArray.concat(lowerCasedCharacters);
