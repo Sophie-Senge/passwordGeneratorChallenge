@@ -18,35 +18,31 @@ Bootstrap Portfolio
 
 ### The challenge
 
-This week we were challenged to build a portfolio webpage with Bootstrap.
+This week’s challenge required me to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
 ### Screenshot
 
-![](./images/Screen%20Shot%202022-12-12%20at%207.50.06%20PM.png)
+![](./images/Screenshot%202023-01-10%20at%209.47.57%20PM.png)
 
 ### Links
 
-- Live Site URL: (https://sophie-senge.github.io/Bootstrap-portfolio-challenge/)
+- Live Site URL: (https://sophie-senge.github.io/passwordGeneratorChallenge/)
 
 ## My process
-I found this project to be quite challenging. I had a very difficult time getting the bootstrap framework to adjust to the way that I had initially envisioned my page. My process was almost entirely trial and error. Delving into as much outside resources as I could, eventually I simplified what I had be striving to achieve and went for a design which was more simple. Once I made that choice building the rest of the page went more smoothly.
+I spent days on this. Writing, rewriting, questioning my methods, and my logic. I saw many examples online with different ways to execute similar types of code and ended up sticking to my logic and making it work.
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Bootstrap
-- Mobile-first workflow
+- JavaScript
 
 
 ### What I learned
-Bootstrap is meant to make things easier and faster and I'm sure that it's an incredibly useful tool. However, I think I've only just now begun to grasp the smallest sense of how it works after many hours of struggle! 
+I think through this process I've come to get a better grasp of variables, functions, methods, arrays, objects and the process required to think through albeit, not complex to some people extremely complex to me, logical process to achieve the results I wanted.
 
 
 ### Continued development
 
-I would hope to learn more about making Bootstrap look less contrived and more personal in a way which would make the process easier and less of a struggle. Design wise, I'm satisfied with the final outcome of this page but know that there will always be room for improvement and look forward to further learning to make my portfolio better.
+Bring it on!
 
 ## Author
   Sophie Perks
