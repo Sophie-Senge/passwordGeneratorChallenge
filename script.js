@@ -89,12 +89,13 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-// fix alerts if there is time
-mainArray ="";
+
+let mainArray =[];
+let passwordLength;
 
 function getPasswordOptions() {
  
-  let passwordLength = prompt("Please choose between 10-64 characters.");
+  passwordLength = prompt("Please choose between 10-64 characters.");
   
   if (passwordLength < 10 || passwordLength > 64){
     alert("password must be between 10 and 64 characters!");
@@ -138,7 +139,7 @@ getPasswordOptions()
 function randomArray (arr){
   let stringToBuild = "";
   let newPos;
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < passwordLength; i++) {
     newPos = Math.floor(Math.random() * arr.length);
     const character = arr[i];
     arr[i] = arr[newPos];
@@ -147,10 +148,7 @@ function randomArray (arr){
   }
   return stringToBuild;
 }
-console.log(randomArray(specialCharacters));
-console.log(randomArray(specialCharacters));
-console.log(randomArray(specialCharacters));
-
+// console.log(randomArray(specialCharacters));
 
 
 
@@ -158,6 +156,10 @@ console.log(randomArray(specialCharacters));
 
 
 function generatePassword() {
+  let generatePassword = randomArray(mainArray);
+
+
+  return generatePassword;
 
 }
 
