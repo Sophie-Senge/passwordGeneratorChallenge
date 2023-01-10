@@ -9,12 +9,12 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Author](#author)
+  - [Acknowledgments](#acknowledgements)
 
 
 ## Overview
-Bootstrap Portfolio
+JavaScript Password Generator
 
 ### The challenge
 
@@ -40,12 +40,11 @@ I spent days on this. Writing, rewriting, questioning my methods, and my logic. 
 I think through this process I've come to get a better grasp of variables, functions, methods, arrays, objects and the process required to think through albeit, not complex to some people extremely complex to me, logical process to achieve the results I wanted.
 
 
-### Continued development
-
-Bring it on!
 
 ## Author
   Sophie Perks
 - GitHub - [Sophie Senge](https://github.com/Sophie-Senge)
 
 
+## Acknowledgements
+Thank you to my tutor Cody who nudged me in the right direction without giving me answers and reminded me to sleep!
