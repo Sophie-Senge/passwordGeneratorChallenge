@@ -89,51 +89,44 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-//figure out how to run a break in the alerts so they don't keep running "ternary expression"?
+// fix alerts if there is time
+mainArray ="";
 
-
-  
 function getPasswordOptions() {
  
   let passwordLength = prompt("Please choose between 10-64 characters.");
   
-  if (passwordLength < 10){
-    alert("password must be at least 10 characters");
+  if (passwordLength < 10 || passwordLength > 64){
+    alert("password must be between 10 and 64 characters!");
   }  
-  else if (passwordLength > 64) {
-    alert("Password must be less than 64 characters.");
-  } 
-  else if (passwordLength => 10 && passwordLength <= 64){ 
-  let hasLowerCase = confirm("Would you like to include lower case characters?");
-  let hasUpperCase = confirm("Would you like to include upper case characters?");
-  let hasSymbols = confirm("Would you like to include symbols?");
-  let hasNumbers = confirm("Would you like to include numbers?");
+ 
+  if (passwordLength => 10 && passwordLength <= 64){ 
+  let hasLowerCase = confirm ("Would you like to include lower case characters?");
+          if (hasLowerCase === true) {
+            mainArray = mainArray.concat(lowerCasedCharacters);
+          }
+        
+  let hasUpperCase = confirm("Would you like to include upper case characters?")
+         if(hasUpperCase === true) {mainArray = mainArray.concat(upperCasedCharacters);}
+        
+  let hasSymbols = confirm("Would you like to include symbols?")
+        if(hasSymbols === true) {mainArray = mainArray.concat(specialCharacters);}
+  let hasNumbers = confirm("Would you like to include numbers?")
+        if(hasNumbers === true) {mainArray = mainArray.concat(numericCharacters);}
 
   console.log(passwordLength);
+  console.log(mainArray);
 
-let userPasswordOptions = {
-  length: passwordLength, 
-  symbols: hasSymbols,
-  lowerCase: hasLowerCase,
-  upperCase: hasUpperCase,
-  numbers: hasNumbers
-}
+
 if (!hasSymbols && !hasLowerCase &&
   !hasUpperCase && !hasNumbers){
   alert("Must choose at least one character type!")
 }
     
-  }
+}
 
- 
-//  console.log(passwordLength)
-
-
-  
-
-  
-  
-  
+ return;
+//  console.log(passwordLength)  
   
 }
 
@@ -162,6 +155,8 @@ console.log(randomArray(specialCharacters));
 
 
 // Function to generate password with user input
+
+
 function generatePassword() {
 
 }
