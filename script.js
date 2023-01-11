@@ -89,8 +89,12 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
+//include prompts and alerts
 
+
+//to build mainArray of user choices
 let mainArray =[];
+//variable to hold password length
 let passwordLength;
 
 function getPasswordOptions() {
@@ -132,8 +136,9 @@ if (!hasSymbols && !hasLowerCase &&
 
 
 
+// Function with for loop to turn mainArray into string and
+// math.random for getting a random element
 
-// Function for getting a random element from an array
 function randomArray (arr){
   let stringToBuild = "";
   let newPos;
@@ -153,6 +158,7 @@ console.log(randomArray(specialCharacters));
 
 
 // Function to generate password with user input
+//called getpasswordOptions in the generatePassword function so it would load when generate password is pushed
 
 
 function generatePassword() {
