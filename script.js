@@ -140,7 +140,7 @@ function randomArray (arr){
   let stringToBuild = "";
   let newPos;
   for (let i = 0; i < passwordLength; i++) {
-    newPos = Math.floor(Math.random() * passwordLength);
+    newPos = Math.floor(Math.random() * mainArray.length);
     const character = arr[i];
     arr[i] = arr[newPos];
     arr[newPos] = character;
