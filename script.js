@@ -95,7 +95,7 @@ let passwordLength;
 
 function getPasswordOptions() {
  
-  passwordLength = prompt("Please choose between 10-64 characters.");
+  passwordLength = prompt("How long would you like your password? Please enter a number between 10-64.");
   
   if (passwordLength < 10 || passwordLength > 64){
     alert("password must be between 10 and 64 characters!");
@@ -126,12 +126,10 @@ if (!hasSymbols && !hasLowerCase &&
     
 }
 
- return;
-//  console.log(passwordLength)  
   
 }
 
-getPasswordOptions()
+
 
 
 
@@ -148,7 +146,9 @@ function randomArray (arr){
   }
   return stringToBuild;
 }
-// console.log(randomArray(specialCharacters));
+console.log(randomArray(specialCharacters));
+
+
 
 
 
@@ -156,7 +156,10 @@ function randomArray (arr){
 
 
 function generatePassword() {
+  getPasswordOptions();
   let generatePassword = randomArray(mainArray);
+ 
+  
 
 
   return generatePassword;
