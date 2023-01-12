@@ -112,12 +112,18 @@ function getPasswordOptions() {
           }
         
   let hasUpperCase = confirm("Would you like to include upper case characters?")
-         if(hasUpperCase === true) {mainArray = mainArray.concat(upperCasedCharacters);}
+         if(hasUpperCase === true) {
+          mainArray = mainArray.concat(upperCasedCharacters);
+        }
         
   let hasSymbols = confirm("Would you like to include symbols?")
-        if(hasSymbols === true) {mainArray = mainArray.concat(specialCharacters);}
+        if(hasSymbols === true) {
+          mainArray = mainArray.concat(specialCharacters);
+        }
   let hasNumbers = confirm("Would you like to include numbers?")
-        if(hasNumbers === true) {mainArray = mainArray.concat(numericCharacters);}
+        if(hasNumbers === true) {
+          mainArray = mainArray.concat(numericCharacters);
+        }
 
   console.log(passwordLength);
   console.log(mainArray);
@@ -144,14 +150,13 @@ function randomArray (arr){
   let newPos;
   for (let i = 0; i < passwordLength; i++) {
     newPos = Math.floor(Math.random() * mainArray.length);
-    const character = arr[i];
-    arr[i] = arr[newPos];
-    arr[newPos] = character;
-    stringToBuild += character; 
+    stringToBuild += arr[newPos]; 
   }
+  console.log(stringToBuild);
+  console.log(stringToBuild.length);
   return stringToBuild;
 }
-console.log(randomArray(specialCharacters));
+
 
 
 
